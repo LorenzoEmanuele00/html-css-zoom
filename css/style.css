@@ -1,3 +1,78 @@
 /* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
 
 /* MAIN */
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container {
+    padding: 50px;
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.enlarge,
+.speak {
+    background-color: lightslategray;
+    padding: 5px;
+    border-radius: .5rem;
+    color: white;
+}
+
+/* flex property row */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.row {
+    overflow-y: auto;
+}
+
+.col {
+    width: calc(100% / 7);
+    padding: 10px;
+}
+
+.card{
+    position: relative;
+}
+
+.user {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.478);
+    padding: 2px;
+}
+
+.commands {
+    background-color: rgb(79, 79, 79);
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* flex property */
+.flex-bar {
+    display: flex;
+    justify-content: space-between;
+}
